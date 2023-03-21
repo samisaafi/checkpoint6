@@ -1,0 +1,43 @@
+PHRASE D'ALGORITHME
+
+VAR
+
+   nbv,nbw,nbc:= ENTIER ;
+
+   sentc:= CHAINE[] ;
+
+COMMENCER
+
+  nbc:= 0 ;
+
+  npc:= 1 ;
+
+  nbv := 0 ;
+
+  écrire("taper la phrase")
+
+  lu (envoyé)
+
+RÉPÉTER
+
+   SI (sentc[nbc]=" ") ALORS
+
+       nbw:=nbw+1 ;
+
+   FIN SI
+
+  SI (sentc[nbc] dans ["a","e","u","i","o","y"]) ALORS
+
+   nbv:= nbv +1 ;
+
+   FIN SI
+
+   nbc := nbc+1 ;
+
+JUSQU'À (sentc[nbc]=".")
+
+write( "le nombre de caractère est ",nbc+1 )
+
+écrire (" le nombre de mot est ",nbw)
+
+écrire (" le nombre de voyelle est ",nbv)
