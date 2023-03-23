@@ -16,7 +16,7 @@ COMMENCER
 
   écrire("taper la phrase")
 
-  lu (envoyé)
+  lire (envoyé)
 
 RÉPÉTER
 
@@ -36,7 +36,7 @@ RÉPÉTER
 
 JUSQU'À (sentc[nbc]=".")
 
-write( "le nombre de caractère est ",nbc+1 )
+lire( "le nombre de caractère est ",nbc+1 )
 
 écrire (" le nombre de mot est ",nbw)
 
